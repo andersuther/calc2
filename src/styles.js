@@ -59,31 +59,28 @@ font-size: 22px;
 padding-left:20px;
 font-family: 'Inter';
 font-weight: bold ;
-elevation:1;
 `;
 
 export const Resultado = styled.View`
+text-align: center;
 justify-content: center;
 align-items: center;
 background-color: #7EA5AD;
 width: 310px;
-height: 61px;
+height: 50px;
 border-radius: 23px;
 font-size: 32px;
 font-family: 'Inter';
 font-weight: bold ;
-color: #ECECEC;
+color:  #ECECEC; 
 margin-top: 1px;
 `;
 
 export const TextoResult = styled.Text`
-justify-content: center;
-align-items: center;
 font-family: 'Inter';
 font-weight: bold ;
-color: #ECECEC;
+color: ${props => props.cor || '#ECECEC'};
 font-size:24px ;
-margin-left: 132px;
 `;
 
 export const Botao1 = styled.TouchableOpacity`
