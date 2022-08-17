@@ -24,7 +24,7 @@ align-items: center;
 `
 export const ButtonsContainer = styled.View`
 width: 100%;
-height: 50%;
+height: 60%;
 justify-content: center;
 align-items: center;
 `

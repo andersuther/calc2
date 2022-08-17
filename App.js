@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Text, KeyboardAvoidingView } from 'react-native';
+import { Text, KeyboardAvoidingView, ScrollView } from 'react-native';
 
 import { Container, HeaderContainer, ButtonChildContainer, ButtonsContainer, TextInput, TextInput2, Resultado, Botao1, Botao2, Botao3, Botao4, Texto1, Principal, TextoResult, Texto2, Textbotao } from './src/styles';
 
@@ -14,8 +14,9 @@ export default function calc2() {
   }
 
   return (
-    <KeyboardAvoidingView style={{ height: '100%' }} behavior={'height'}>
+    
       <Container>
+        <ScrollView>
         <HeaderContainer>
           <Principal>CALCULADORA BÁSICAS</Principal>
 
@@ -76,8 +77,9 @@ export default function calc2() {
             </Botao1>
           </ButtonChildContainer>
         </ButtonsContainer>
+        </ScrollView>
       </Container>
-    </KeyboardAvoidingView>
+    
   );
 }
 
