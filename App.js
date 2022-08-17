@@ -41,7 +41,6 @@ export default function calc2() {
           </TextInput>
 
           <Texto1>Resultado</Texto1>
-
           <Resultado>
 
             <Text style={{ color: '#ECECEC', fontSize: 32, fontWeight: 'bold' }}>{resultado?.toFixed(2)}</Text>
