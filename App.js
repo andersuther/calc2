@@ -9,7 +9,6 @@ export default function calc2() {
   const [valor2, setValor2] = useState('');
   const [resultado, setResultado] = useState();
 
-
   const equacao = (qual) => {
     setResultado(eval(`parseInt(valor)${qual}parseInt(valor2)`))
   }
@@ -43,7 +42,7 @@ export default function calc2() {
           <Texto1>Resultado</Texto1>
           <Resultado>
 
-            <Text style={{ color: '#ECECEC', fontSize: 32, fontWeight: 'bold' }}>{resultado?.toFixed(2)}</Text>
+            <TextoResult  >{resultado?.toFixed(2)}</TextoResult>
 
           </Resultado>
         </HeaderContainer>
