@@ -89,6 +89,8 @@ width: 129px;
 height: 80px;
 border-radius: 14px;
 margin: 10px;
+align-items: center;
+justify-content: center;
 `;
 
 export const Textbotao = styled.Text`

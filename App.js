@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Text, KeyboardAvoidingView, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
+import Icon from 'react-native-vector-icons/Feather';
 
 import { Container, HeaderContainer, ButtonChildContainer, ButtonsContainer, TextInput, TextInput2, Resultado, Botao1, Botao2, Botao3, Botao4, Texto1, Principal, TextoResult, Texto2, Textbotao } from './src/styles';
 
@@ -14,11 +15,11 @@ export default function calc2() {
   }
 
   return (
-    
-      <Container>
-        <ScrollView>
+
+    <Container>
+      <ScrollView>
         <HeaderContainer>
-          <Principal>CALCULADORA BÁSICAS</Principal>
+          <Principal>CALCULADORA BÁSICA</Principal>
 
           <Texto1>Valor 1</Texto1>
 
@@ -54,13 +55,21 @@ export default function calc2() {
             <Botao1
               onPress={() => equacao('+')}
             >
-              <Textbotao>+</Textbotao>
+              <Icon
+                name='plus-circle'
+                size={30}
+                color='#ECECEC'
+              />
             </Botao1>
 
             <Botao1
               onPress={() => equacao('-')}
             >
-              <Textbotao>-</Textbotao>
+              <Icon
+                name='minus-circle'
+                size={30}
+                color='#ECECEC'
+              />
             </Botao1>
           </ButtonChildContainer>
           <ButtonChildContainer>
@@ -68,18 +77,26 @@ export default function calc2() {
             <Botao1
               onPress={() => equacao('*')}
             >
-              <Textbotao>*</Textbotao>
+              <Icon
+                name='x-circle'
+                size={30}
+                color='#ECECEC'
+              />
             </Botao1>
 
             <Botao1
               onPress={() => equacao('/')}>
-              <Textbotao>/</Textbotao>
+              <Icon
+                name='divide-circle'
+                size={30}
+                color='#ECECEC'
+              />
             </Botao1>
           </ButtonChildContainer>
         </ButtonsContainer>
-        </ScrollView>
-      </Container>
-    
+      </ScrollView>
+    </Container>
+
   );
 }
 
